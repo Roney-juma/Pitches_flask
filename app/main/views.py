@@ -17,7 +17,7 @@ def index():
    
     return render_template('index.html',pitches=pitches)
 
-    @main.route('/profile/<username>')
+@main.route('/profile/<username>')
 @login_required
 def profile(username):
 
